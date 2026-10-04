@@ -1,5 +1,5 @@
 -- Removes everything schema.sql creates, so it can be run again from scratch.
--- WARNING: deletes all NextRung data (accounts in auth.users are kept).
+-- WARNING: deletes all Upstride data (accounts in auth.users are kept).
 drop trigger if exists on_auth_user_created on auth.users;
 drop view if exists public.guide_directory;
 drop table if exists public.reviews, public.scorecards, public.bookings, public.services,

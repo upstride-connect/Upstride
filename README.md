@@ -1,8 +1,8 @@
-# NextRung
+# Upstride
 
-Career guidance from people one rung ahead.
+Career guidance from people one step ahead.
 
-NextRung is a two-sided career platform. Learners, from final-year students to experienced professionals, book one-to-one sessions with verified working professionals ("guides") in their field. Guides set their own services and prices, accept requests, run sessions and share scorecards.
+Upstride is a two-sided career platform. Learners, from final-year students to experienced professionals, book one-to-one sessions with verified working professionals ("guides") in their field. Guides set their own services and prices, accept requests, run sessions and share scorecards.
 
 **Live site:** https://upstride-connect.github.io/Upstride/
 

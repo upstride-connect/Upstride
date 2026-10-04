@@ -1,6 +1,6 @@
-// Shared helpers for every NextRung page: Supabase client, formatting, header state.
+// Shared helpers for every Upstride page: Supabase client, formatting, header state.
 (function () {
-  const cfg = window.NEXTRUNG_CONFIG || {};
+  const cfg = window.UPSTRIDE_CONFIG || {};
   const hasValues = cfg.SUPABASE_URL && cfg.SUPABASE_ANON_KEY &&
     !cfg.SUPABASE_URL.startsWith('YOUR_') && !cfg.SUPABASE_ANON_KEY.startsWith('YOUR_');
   // Supabase's newer "sb_publishable_…" keys must travel only in the apikey header.
@@ -83,7 +83,7 @@
     newMeetLink() {
       const abc = 'abcdefghjkmnpqrstuvwxyz23456789', bytes = new Uint8Array(12);
       crypto.getRandomValues(bytes);
-      return 'https://meet.jit.si/NextRung-' + Array.from(bytes, x => abc[x % abc.length]).join('');
+      return 'https://meet.jit.si/Upstride-' + Array.from(bytes, x => abc[x % abc.length]).join('');
     },
 
     safeUrl(u) {
@@ -155,7 +155,7 @@
       if (/duplicate key.*availability_slots|availability_slots_guide_id_starts_at_key/.test(m)) return 'You already have a slot at that time.';
       if (/bookings_no_double_accept/.test(m)) return 'You already have a session accepted at that time. Decline this one or cancel the other first.';
       if (/Invalid login credentials/i.test(m)) return 'Email or password is incorrect.';
-      if (/Email not confirmed/i.test(m)) return 'Please confirm your email first. Check your inbox for the link from NextRung.';
+      if (/Email not confirmed/i.test(m)) return 'Please confirm your email first. Check your inbox for the link from Upstride.';
       if (/already registered|already been registered/i.test(m)) return 'An account with this email already exists. Sign in instead.';
       if (/Password should be at least/i.test(m)) return 'Use a password with at least 8 characters.';
       if (/email rate limit/i.test(m)) return 'We have sent too many confirmation emails in the last hour. Please try again later.';

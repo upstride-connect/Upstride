@@ -1,4 +1,4 @@
--- NextRung database updates 5 and 6 in one file (30 Sep 2026).
+-- Upstride database updates 5 and 6 in one file (30 Sep 2026).
 -- Run once in Supabase: SQL Editor -> New query -> paste all of this -> Run. Safe to run again.
 
 -- Update 5 (30 Sep 2026): only learner accounts can book sessions.

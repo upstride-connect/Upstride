@@ -1,5 +1,5 @@
 -- =====================================================================
--- NextRung database schema (Supabase / Postgres 15+)
+-- Upstride database schema (Supabase / Postgres 15+)
 --
 -- Run this whole file once in Supabase: SQL Editor -> New query -> Run.
 -- It is safe to run on a fresh project. To start over, run reset.sql first.

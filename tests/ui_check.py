@@ -1,4 +1,4 @@
-"""Browser checks for the NextRung pages using a stand-in for Supabase (tests/mock-supabase.js).
+"""Browser checks for the Upstride pages using a stand-in for Supabase (tests/mock-supabase.js).
 
 Run: PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 tests/ui_check.py
 """
@@ -78,7 +78,7 @@ def main():
         check("admin sees Accept and Reject on a new booking", p.locator("[data-panel=bookings] [data-act=bk-accept]").count() == 1 and p.locator("[data-panel=bookings] [data-act=bk-reject]").count() == 1)
         p.click("[data-panel=bookings] [data-act=bk-accept]"); p.wait_for_timeout(300)
         w = writes(p)
-        check("admin can accept a booking, with a video link", w and w[-1]["payload"]["status"] == "accepted" and w[-1]["payload"]["meeting_link"].startswith("https://meet.jit.si/NextRung-") and w[-1]["rows"] == ["b1"], w)
+        check("admin can accept a booking, with a video link", w and w[-1]["payload"]["status"] == "accepted" and w[-1]["payload"]["meeting_link"].startswith("https://meet.jit.si/Upstride-") and w[-1]["rows"] == ["b1"], w)
         p.click("[data-tab=bookings]"); p.wait_for_timeout(200)
         p.click("[data-panel=bookings] [data-act=bk-reject]")
         check("admin booking reject asks for confirmation", p.locator("#modal >> text=Reject this booking?").is_visible())
