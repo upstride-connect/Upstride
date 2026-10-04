@@ -4,7 +4,7 @@ Career guidance from people one rung ahead.
 
 NextRung is a two-sided career platform. Learners, from final-year students to experienced professionals, book one-to-one sessions with verified working professionals ("guides") in their field. Guides set their own services and prices, accept requests, run sessions and share scorecards.
 
-**Live site:** https://adityabankar266.github.io/nextrung/
+**Live site:** https://upstride-connect.github.io/Upstride/
 
 ## What works
 
@@ -47,8 +47,8 @@ supabase/         schema.sql, reset.sql, tests/
    - `CONTACT_EMAIL`: the support address shown in the footer, privacy notice and terms (empty hides it).
    - `FEE_COLLECTED`: keep `false` while learners pay guides directly; set `true` once online checkout collects the 15% fee.
 4. **Set the redirect URLs:** Supabase → Authentication → URL Configuration.
-   - Site URL: `https://adityabankar266.github.io/nextrung/`
-   - Redirect URLs: add `https://adityabankar266.github.io/nextrung/**`
+   - Site URL: `https://upstride-connect.github.io/Upstride/`
+   - Redirect URLs: add `https://upstride-connect.github.io/Upstride/**`
 5. **Make yourself admin:** sign up on the site, confirm your email, then run in the SQL Editor:
    ```sql
    update public.profiles set role = 'admin'
